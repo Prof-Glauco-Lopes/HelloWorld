@@ -5,55 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apresentação</title>
     <style>
-        /* Estilos gerais */
-        html, body {
+        /* Configuração do corpo */
+        body {
             margin: 0;
             padding: 0;
-            height: 100%; /* Garante que o fundo cubra toda a altura */
             font-family: 'Arial', sans-serif;
             color: #FFFFFF;
             text-align: center;
+            background: url('background.jpg') no-repeat center center fixed; /* Imagem centralizada e fixa */
+            background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
         }
 
-        body {
-            background: url('background.jpg') no-repeat center center; /* Centraliza a imagem */
-            background-size: cover; /* Redimensiona automaticamente para cobrir toda a tela */
-            min-height: 100%; /* Garante que o fundo preencha a altura em telas pequenas */
-        }
-
-        /* Contêiner principal */
+        /* Contêiner para o texto */
         .content {
-            background: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para maior legibilidade */
+            background: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para maior contraste */
             padding: 20px;
-            margin: 5% auto;
-            width: 80%;
+            margin: 10% auto;
+            width: 90%;
+            max-width: 800px; /* Limita o tamanho máximo do conteúdo */
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
 
-        /* Títulos */
-        h1, h2 {
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-
+        /* Estilo para o título */
         h1 {
             font-size: 3em;
             margin: 10px 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
+        /* Estilo para o subtítulo */
         h2 {
-            font-size: 1.5em;
+            font-size: 1.8em;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
-        /* Parágrafos */
+        /* Estilo para os parágrafos */
         p {
             font-size: 1.2em;
             line-height: 1.6;
             margin: 10px 0;
         }
 
-        /* Links */
+        /* Links personalizados */
         a {
             color: #00E5FF;
             text-decoration: none;
